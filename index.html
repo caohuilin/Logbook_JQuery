@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+
+          <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+          <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="js/bootstrap-datepicker.min.js"></script>
+          <script src="js/bootstrap-datepicker.zh-CN.min.js"></script>
+          <script src="js/marked.js"></script>
+          <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css" media="screen" title="no title" charset="utf-8">
+        <title>日报系统</title>
+    </head>
+    <body>
+        <header class="header">
+          <div class="icon">
+            <img src="img/icon.png" alt="" />
+          </div>
+          <div class="nav">
+            <button id="note" type="button" name="button">我的日志</button>
+            <button id="inf"type="button" name="button">个人信息</button>
+              <ul id="user">
+                <li id="change_dep">修改部门</li>
+                <li>登出</li>
+              </ul>
+          </div>
+          <div id="mask"></div>
+          <div id="popup">
+            <div class="title">
+              我的日志
+            </div>
+            <div class="icon"></div>
+            <div class="con">
+              <div class="date">
+                选择日期</br>
+                <input type="text" name="name" value="2015-12-26">
+              </div>
+              <div class="mood">
+                我的心情
+                <ul>
+                  <li><img src="../img/mood1.png" style=""alt="" /></li>
+                  <li><img src="../img/mood2.png" style="margin-top:5px;"alt="" /></li>
+                  <li><img src="../img/mood3.png" style="margin-top:7px;"alt="" /></li>
+                  <li><img src="../img/mood4.png" style="margin-top:5px;" alt="" /></li>
+                </ul>
+              </div>
+              <div class="note">
+                我的日志
+                <textarea name="name"></textarea>
+              </div>
+            </div>
+            <button class="certern" type="button" name="button">确定</button>
+          </div>
+          <div class="add_com_text">
+            <div class="title">
+              我的评论
+            </div>
+            <textarea name="name"></textarea>
+            <button class="certern" type="button" name="button">确定</button>
+          </div>
+        </header>
+        <div class="content">
+          <div class="leftArea">
+            <div class="date">
+              <div class=""></div>
+            </div>
+            <div class="caption">
+              <ul class="c_de"></ul>
+            </div>
+          </div>
+          <div class="rightArea">
+            <div class="date">
+              2015-12-26
+            </div>
+            <ul class="departments"></ul>
+          </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
